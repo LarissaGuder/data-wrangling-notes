@@ -38,3 +38,22 @@ print("----------- >>");
 ## size: tamanho da Series (número de elementos)
 ## index.name: nome do vetor de rótulos
 ## index.dtype: dtype do vetor de rótulos
+
+#P02
+alunos.name = "alunos"
+alunos.index.name = "matriculas"
+print(alunos)
+print("----")
+tamanho = alunos.size
+dados = alunos.values
+index = alunos.index
+alunos_tipo = type(alunos)
+alunos_dtype = alunos.dtype
+alunos_idx_dtype = alunos.index.dtype
+
+print("Número de elementos: ", tamanho)
+print("Dados: ", dados)
+print("Index: ", index)
+print("Tipo: ", alunos_tipo)
+print("dtype Series: ", alunos_dtype)
+print("dtype index: ", alunos_idx_dtype)
